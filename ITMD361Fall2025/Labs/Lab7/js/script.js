@@ -1,14 +1,17 @@
 function init(){
 //add your javascrip between these two lines of code
-  
-function container() {
-  var x = document.getElementById("entryinput").value;
-  document.getElementById("textoutput").innerHTML = x;
+  var button = document.getElementById("entrybutton");
+  var input = document.getElementById("entryinput");
+  var output = document.getElementById("textoutput");
+
+  button.addEventListener("click", function() {
+    
+    alert("Efren Bahena: " + input.value);
+
+    
+    output.innerHTML = input.value;
+  });
 }
-function entrybutton() {
-  alert("Hello! I am an alert box!");
-}
- 
 
 
 
